@@ -1,0 +1,20 @@
+/*canvas {
+    border: 3px solid black;
+    margin: auto;
+}*/
+
+.canvas-container {
+    margin: auto;
+}
+
+.thumbnail {
+    height: 163px;
+}
+
+.design-container {
+    background-color: red;
+    border: 2px solid black;
+    
+
+
+}

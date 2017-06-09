@@ -1,23 +1,77 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <title>canvasmeme</title>
     <link type="text/css" rel="stylesheet" href="http://getbootstrap.com/dist/css/bootstrap.min.css" />
     <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
     <script src="http://fabricjs.com/lib/fabric.js"></script>
-    <style>
-        canvas{
-            border: 1px solid #ccc;
-            margin: auto;
-        }
-        .canvas-container{
-           margin: auto;
-        }
-        .thumbnail{
-         height: 163px;
-        }
-    </style>
+
 </head>
 
+<body>
+    <h1 class="text-center">Let's make your own meme</h1>
+    <div class="container">
+        <div class="row" >
+            <div class="col-lg-8 design-container">
+                <h2>Design Container</h2>
+                <!--canvas container-->
+                <div>
+                    <canvas width="600" height="400" id="canvas"></canvas>
+                </div>
+                <!--end canvas container-->
+            </div>
+            <div class="col-lg-4">
+                <!--text and image editor-->
+                <div class="row">
+                    
+                </div>
+                <div class="row">
+                    <h3>Text</h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="input-group">
+                                <input id="ctrlText" type="text" class="form-control" placeholder="Put your text here">
+                                <div id="ctrlAddText" class="input-group-addon"><i class="glyphicon glyphicon-send"></i></div>
+                            </div>
+                        </div>
+                        <!--text and image editor-->
 
+                    </div>
+                </div>
+
+                <div class="row">
+                    <h3>Background</h3>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="https://upload.wikimedia.org/wikipedia/en/f/ff/SuccessKid.jpg" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="https://imgflip.com/s/meme/Bad-Luck-Brian.jpg" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="https://imgflip.com/s/meme/Futurama-Fry.jpg" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="https://tayleighblog.files.wordpress.com/2013/11/unknown-2.jpeg" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="http://orig07.deviantart.net/566a/f/2012/116/7/8/liara_meme__no_text_by_ma_rin-d4xlxzj.jpg" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="https://imgflip.com/s/meme/Y-U-No.jpg" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="http://i.qkme.me/3rfhrl.jpg" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="thumbnail img-responsive" src="https://imgflip.com/s/meme/Homophobic-Seal.jpg" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
